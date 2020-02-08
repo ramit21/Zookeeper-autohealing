@@ -17,4 +17,4 @@ Example: autohealer/src> `java -jar target/autohealer-1.0-SNAPSHOT-jar-with-depe
 2. Each worker creates an ephemeral znode under /workers root znode in zokeeper.
 3. Worker has a intentional bug in code which brings it down, and thus removes the ephemeral znode that it had created.
 4. The autohealer is implementing the Watcher interface, and on the **NodeChildrenChanged** event, it gets informed by zookeeper if any of the znode created by the worker has been deleted.
-5. Auto healer then takes remedial action and launches another instance of the worker, and thus maintaining the specified no. of worker isntances at all times.
+5. Auto healer then takes remedial action and launches another instance of the worker, and thus maintaining the specified no. of worker instances at all times.

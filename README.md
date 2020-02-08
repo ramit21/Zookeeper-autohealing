@@ -1,7 +1,6 @@
 # Auto healing using Zookeeper
 
-To run the project, 
-follow below steps:
+To run the project, follow below steps:
 
 1. Download zookeeper and start the zookeeper server.
 
@@ -9,7 +8,7 @@ follow below steps:
 
 3. To run the autohealer, which in turn would launch and maintain 10 workers:
 
-Run `java -jar target/autohealer-1.0-SNAPSHOT-jar-with-dependencies.jar <number of workers> <path to woker jar>
+Run `java -jar target/autohealer-1.0-SNAPSHOT-jar-with-dependencies.jar <number of workers> <path to woker jar>`
 Example: autohealer/src> `java -jar target/autohealer-1.0-SNAPSHOT-jar-with-dependencies.jar 10 "../flakyworker/target/flaky.worker-1.0-SNAPSHOT-jar-with-dependencies.jar"`
 
 
